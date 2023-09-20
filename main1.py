@@ -17,6 +17,7 @@ def index(limit:int, published:bool , sort:Optional[str]=None):
 def unpublished():
     return {'data':'all unpublished blogs'}
 
+@app.get('/blog/{id}/comments')
 
  
 
